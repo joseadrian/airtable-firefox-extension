@@ -1,13 +1,13 @@
 {
 
   "manifest_version": 2,
-  "name": "Airtable interceptor",
+  "name": "Airtable webhook",
   "version": "1.0",
 
-  "description": "Waits for HTTP requests to finish from airtable and then send them to a webhook url",
+  "description": "Sends requests (modified) done by airtable in the background when a cell is updated, an item (image or relation) or row is added or removed.",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "96": "icons/default.png"
   },
 
   "content_scripts": [
