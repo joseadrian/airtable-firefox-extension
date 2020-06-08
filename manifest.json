@@ -1,0 +1,58 @@
+{
+
+  "manifest_version": 2,
+  "name": "Airtable interceptor",
+  "version": "1.0",
+
+  "description": "Waits for HTTP requests to finish from airtable and then send them to a webhook url",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://airtable.com/*"],
+      "js": ["airtable.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["lib/axios.min.js", "background.js", "options/script.js"]
+  },
+
+  "options_ui": {
+    "page": "options/index.html"
+  },
+
+  "permissions": [
+    "https://airtable.com/v0.3/*",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "joseadrian.dev@outlook.com"
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
