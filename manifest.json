@@ -4,7 +4,7 @@
   "name": "Airtable webhook",
   "version": "1.0",
 
-  "description": "Sends requests (modified) done by airtable in the background when a cell is updated, an item (image or relation) or row is added or removed.",
+  "description": "Sends requests (modified) done by airtable in the background when a cell is updated, an item (attachment or relation) or row is added or removed.",
 
   "icons": {
     "96": "icons/default.png"
